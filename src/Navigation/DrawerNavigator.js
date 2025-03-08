@@ -1,45 +1,40 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+
+import AuthLoadingScreen from '../screens/Authentication/AuthLoadingScreen';
+import DrawerMenu from './Drawer';
+import { GuestTab, AppStack } from './StackNavigators';
+import { constants } from '../core/constants';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
+const AppDrawer = () => (
+  <Drawer.Navigator
+    drawerContent={(props) => <DrawerMenu {...props} />}
+    screenOptions={{ drawerLockMode: 'locked-closed', drawerStyle: { width: constants.ScreenWidth * 0.83 } }}
+  >
+    <Drawer.Screen name="App" component={AppStack} />
+  </Drawer.Navigator>
+);
 
-function DetailsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Details Screen</Text>
-    </View>
-  );
-}
+const MyApp = () => (
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName="AuthLoading">
+      <Stack.Screen name="AuthLoading" component={AuthLoadingScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="App" component={AppDrawer} options={{ headerShown: false }} />
+      <Stack.Screen name="Guest" component={GuestTab} options={{ headerShown: false }} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
 
-function AppDrawer() {
-  return (
-    <Drawer.Navigator initialRouteName="Home">
-      <Drawer.Screen name="Home" component={HomeScreen} />
-      <Drawer.Screen name="Details" component={DetailsScreen} />
-    </Drawer.Navigator>
-  );
-}
+const prefix = /https:\/\/synergys.page.link\/|synergys:\/\//;
 
-function MyApp() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Drawer">
-        <Stack.Screen name="Drawer" component={AppDrawer} options={{ headerShown: false }} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+const MainApp = () => <MyApp uriPrefix={prefix} />;
 
-export default MyApp;
+export default MainApp;

@@ -107,13 +107,8 @@ class App extends React.Component {
             <MenuProvider>
               <MyStatusBar>
                 <NetworkStatus> 
-                  <NavigationContainer>
-                  <Drawer.Navigator initialRouteName="Home">
-                      <Drawer.Screen name="Home" component={HomeScreen} />
-                      <Drawer.Screen name="Details" component={DetailsScreen} />
-                      <Drawer.Screen name="Test" component={TestComponent} />
-                    </Drawer.Navigator>
-                  </NavigationContainer>
+                <RootController />
+                  
                  <AppToast />
                 </NetworkStatus>
                </MyStatusBar>
