@@ -1,6 +1,6 @@
 import { Alert, Platform } from 'react-native'
 import ImagePicker from 'react-native-image-picker'
-import DocumentPicker from 'react-native-document-picker';
+import DocumentPicker from '@react-native-documents/picker';
 import RNFS from 'react-native-fs'
 import RNFetchBlob from 'rn-fetch-blob'
 import FileViewer from 'react-native-file-viewer'
@@ -11,7 +11,7 @@ import UUIDGenerator from 'react-native-uuid-generator'
 import { PDFDocument, degrees, PageSizes, StandardFonts, rgb } from 'pdf-lib'
 import _ from 'lodash'
 import { faCheck, faFlag, faTimes, faClock, faUpload, faFileSignature, faSackDollar, faEnvelopeOpenDollar, faEye, faPen, faBan, faEllipsisH, faPauseCircle, faSave, faUserHardHat } from 'react-native-fontawesome'
-import Geocoder from 'react-native-geocoding';
+//import Geocoder from 'react-native-geocoding';
 
 import moment from 'moment';
 import 'moment/locale/fr'
@@ -139,37 +139,37 @@ export const formatSpaces = (str) => {
   return str
 }
 
-//Get zip code + city
-export const getAddressDetails = async (lat, lng) => {
+// //Get zip code + city
+// export const getAddressDetails = async (lat, lng) => {
 
-  var addressDetails = {
-    zipCode: "",
-    city: ""
-  }
+//   var addressDetails = {
+//     zipCode: "",
+//     city: ""
+//   }
 
-  if (lat === "" || lng === "" || lat === null || lng === null)
-    return addressDetails
+//   if (lat === "" || lng === "" || lat === null || lng === null)
+//     return addressDetails
 
-  addressDetails = await Geocoder.from(lat, lng)
-    .then(json => {
-      const addressComponent = json.results[0]
-      const { address_components } = addressComponent
+//   addressDetails = await Geocoder.from(lat, lng)
+//     .then(json => {
+//       const addressComponent = json.results[0]
+//       const { address_components } = addressComponent
 
-      for (const component of address_components) {
-        const isPostalCode = component.types.includes('postal_code')
-        const isCity = component.types.includes('locality')
-        if (isPostalCode)
-          addressDetails.zipCode = component.long_name
-        else if (isCity)
-          addressDetails.city = component.long_name
-      }
+//       for (const component of address_components) {
+//         const isPostalCode = component.types.includes('postal_code')
+//         const isCity = component.types.includes('locality')
+//         if (isPostalCode)
+//           addressDetails.zipCode = component.long_name
+//         else if (isCity)
+//           addressDetails.city = component.long_name
+//       }
 
-      return addressDetails
-    })
-    .catch(e => { throw new Error(e) })
+//       return addressDetails
+//     })
+//     .catch(e => { throw new Error(e) })
 
-  return addressDetails
-}
+//   return addressDetails
+// }
 
 //We suppose that firstName can be composed of many strings. And lastName only one string.
 export const retrieveFirstAndLastNameFromFullName = (fullName) => {

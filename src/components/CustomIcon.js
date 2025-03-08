@@ -4,7 +4,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native"
 import * as theme from '../core/theme'
 import { Appbar } from 'react-native-paper'
 
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { FontAwesomeIcon } from 'react-native-vector-icons/FontAwesome5'
 import { faCommentDots } from 'react-native-fontawesome'
 
 import PropTypes from 'prop-types'

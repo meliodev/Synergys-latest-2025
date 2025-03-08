@@ -8,7 +8,7 @@ import * as theme from "../core/theme";
 import { constants, isTablet } from '../core/constants'
 import { withNavigation } from 'react-navigation'
 
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { FontAwesomeIcon } from 'react-native-vector-icons/FontAwesome5'
 import { faFilter } from 'react-native-fontawesome'
 
 const SearchBar = ({
