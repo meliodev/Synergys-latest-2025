@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, FlatList } from 'react-native';
-import { faHomeLgAlt, faInbox, faConstruction, faCalendarAlt, faUserFriends, faAddressCard, faTicketAlt, faFileInvoice, faFolder, faNewspaper, faSignOutAlt, faCogs } from '@fortawesome/pro-light-svg-icons';
+import { faHomeLgAlt, faInbox, faConstruction, faCalendarAlt, faUserFriends, faAddressCard, faTicketAlt, faFileInvoice, faFolder, faNewspaper, faSignOutAlt, faCogs } from 'react-native-fontawesome';
 import { faCommentDots, faCog } from "@fortawesome/free-solid-svg-icons";
 
 import firebase, { db } from '../firebase';
