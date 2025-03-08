@@ -10,6 +10,8 @@ import { MenuProvider } from 'react-native-popup-menu';
 //import codePush from 'react-native-code-push';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
 import { enableScreens } from 'react-native-screens';
 enableScreens();
 
@@ -41,11 +43,27 @@ const paperTheme = {
 
 const Stack = createNativeStackNavigator();
 
+const Drawer = createDrawerNavigator();
+
 const TestComponent = () => (
   <View style={styles.container}>
     <Text>Test Component</Text>
   </View>
 );
+
+
+const HomeScreen = () => (
+  <View style={styles.container}>
+    <Text>Home Screen</Text>
+  </View>
+);
+
+const DetailsScreen = () => (
+  <View style={styles.container}>
+    <Text>Details Screen</Text>
+  </View>
+);
+
 
 class App extends React.Component {
   async componentDidMount() {
@@ -90,9 +108,11 @@ class App extends React.Component {
               <MyStatusBar>
                 <NetworkStatus> 
                   <NavigationContainer>
-                    <Stack.Navigator initialRouteName="Root">
-                      <Stack.Screen name="Root205" component={TestComponent} />
-                    </Stack.Navigator>
+                  <Drawer.Navigator initialRouteName="Home">
+                      <Drawer.Screen name="Home" component={HomeScreen} />
+                      <Drawer.Screen name="Details" component={DetailsScreen} />
+                      <Drawer.Screen name="Test" component={TestComponent} />
+                    </Drawer.Navigator>
                   </NavigationContainer>
                  <AppToast />
                 </NetworkStatus>
