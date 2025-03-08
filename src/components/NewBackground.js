@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { View, ImageBackground, StyleSheet, KeyboardAvoidingView, Platform } from "react-native";
-import { SvgXml } from 'react-native-svg';
+// import { SvgXml } from 'react-native-svg';
 
 import { constants } from '../core/constants'
 import * as theme from '../core/theme'
@@ -28,7 +28,7 @@ const NewBackground = ({ children, style, motifStyle, showMotif = true }) => {
                 keyboardVerticalOffset={Platform.OS === "ios" ? 100 : 0}
             >
                 {children}
-                {showMotif && <SvgXml xml={motif} style={[styles.motifStyle, motifStyle]} />}
+                {/* {showMotif && <SvgXml xml={motif} style={[styles.motifStyle, motifStyle]} />} */}
             </KeyboardAvoidingView>
         </View>
     )
