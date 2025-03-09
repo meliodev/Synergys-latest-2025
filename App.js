@@ -6,9 +6,12 @@ import {
   LogBox,
   Platform,
   StyleSheet,
-  Text
+  Text,
+  View
 } from 'react-native';
 import notifee, { AndroidImportance } from '@notifee/react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { persistStore } from 'redux-persist';
 import { Provider } from 'react-redux';
@@ -24,18 +27,31 @@ import { MenuProvider } from 'react-native-popup-menu';
 import AppToast from './src/components/global/AppToast';
 import NetworkStatus from './src/NetworkStatus';
 import RootController from './src/Navigation/DrawerNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
-//import firebase from './firebase';
+import firebase from './src/firebase';
 import Store from './src/Store/configureStore';
 import { fontsConfig } from './fontConfig';
 import * as theme from './src/core/theme';
 import MyStatusBar from './src/components/MyStatusBar';
-import { LoadDialog } from './src/components';
+// import { LoadDialog } from './src/components';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-
-
+const paperTheme = {
+  ...DefaultTheme,
+  fonts: configureFonts(fontsConfig),
+  colors: {
+    primary: theme.colors.primary,
+    accent: theme.colors.secondary,
+    background: theme.colors.background,
+    surface: theme.colors.surface,
+    text: theme.colors.secondary,
+    disabled: theme.colors.gray_medium,
+    placeholder: theme.colors.gray_dark,
+    backdrop: theme.colors.white,
+  },
+};
 
 const HomeScreen = () => (
   <View style={styles.container}>
@@ -57,12 +73,27 @@ const AppDrawer = () => (
 );
 
 const App = () => {
+  let persistor = persistStore(Store);
+  persistor.purge()
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Drawer">
-        <Stack.Screen name="Drawer" component={AppDrawer} options={{ headerShown: false }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={Store}>
+    <PersistGate persistor={persistor}>
+      <PaperProvider theme={paperTheme}>
+        <MenuProvider>
+          <MyStatusBar>
+            {/* {progressView}
+            <Text>{this.state.syncMessage || ""}</Text> */}
+            <NetworkStatus>
+             <RootController />
+
+              <AppToast />
+            </NetworkStatus>
+          </MyStatusBar>
+        </MenuProvider>
+      </PaperProvider>
+    </PersistGate>
+  </Provider>
   );
 };
 

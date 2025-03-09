@@ -1,6 +1,6 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import { faCheck, faTimes } from '@fortawesome/pro-light-svg-icons';
+import { faCheck, faTimes } from 'react-native-vector-icons/FontAwesome5';
 
 import { CustomIcon } from '../../../components';
 import * as theme from '../../../core/theme'

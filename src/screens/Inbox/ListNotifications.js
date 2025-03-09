@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image, FlatList, RefreshControl } from 'react-native'
 import { List } from 'react-native-paper';
-import { faBell } from '@fortawesome/pro-light-svg-icons'
+import { faBell } from 'react-native-vector-icons/FontAwesome5'
 
 import * as theme from '../../core/theme'
 import { constants } from '../../core/constants'

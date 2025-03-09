@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, FlatList, RefreshControl } from 'react-native';
 import { connect } from 'react-redux'
-import { faConstruction } from '@fortawesome/pro-light-svg-icons'
+import { faConstruction } from 'react-native-vector-icons/FontAwesome5'
 import { faThLarge, faList } from 'react-native-vector-icons/FontAwesome5'
 import _ from 'lodash'
 

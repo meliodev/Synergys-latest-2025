@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { faInfoCircle } from '@fortawesome/pro-light-svg-icons';
+import { faInfoCircle } from 'react-native-vector-icons/FontAwesome5';
 
 import { CustomIcon } from '../../../components';
 import * as theme from '../../../core/theme'

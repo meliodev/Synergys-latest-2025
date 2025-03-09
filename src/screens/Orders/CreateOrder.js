@@ -19,7 +19,7 @@ import {
   faHandsUsd,
   faInfoCircle,
   faTimes,
-} from '@fortawesome/pro-light-svg-icons';
+} from 'react-native-vector-icons/FontAwesome5';
 
 import moment from 'moment';
 import 'moment/locale/fr';

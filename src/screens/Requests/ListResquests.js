@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, FlatList, RefreshControl } from 'react-native';
 import { List, Card, Paragraph, Title } from 'react-native-paper';
-import { faTicketAlt } from '@fortawesome/pro-light-svg-icons'
+import { faTicketAlt } from 'react-native-vector-icons/FontAwesome5'
 import { withNavigation } from 'react-navigation'
 import SearchInput, { createFilter } from 'react-native-search-filter'
 

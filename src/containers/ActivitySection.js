@@ -1,7 +1,7 @@
 import React from "react"
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native"
 import { Card, Title } from 'react-native-paper'
-import { faChartLine, faRetweet } from "@fortawesome/pro-light-svg-icons"
+import { faChartLine, faRetweet } from "react-native-vector-icons/FontAwesome5"
 
 import moment from 'moment'
 import 'moment/locale/fr'

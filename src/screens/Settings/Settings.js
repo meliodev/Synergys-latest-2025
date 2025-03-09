@@ -1,4 +1,4 @@
-import { faChevronRight, faFile, faInfoCircle, faLock, faPen } from '@fortawesome/pro-light-svg-icons';
+import { faChevronRight, faFile, faInfoCircle, faLock, faPen } from 'react-native-vector-icons/FontAwesome5';
 import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native'
 import { Subheading, Title } from 'react-native-paper';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
 import _ from 'lodash'
-import { faTimes } from '@fortawesome/pro-light-svg-icons'
+import { faTimes } from 'react-native-vector-icons/FontAwesome5'
 import { faArrowAltRight } from "@fortawesome/pro-solid-svg-icons"
 import { connect } from 'react-redux'
 

@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Alert, FlatList, ScrollView } from 'react-native';
 import { List, Card, Title, Paragraph, IconButton } from 'react-native-paper';
-import { faPen, faUserPlus } from '@fortawesome/pro-light-svg-icons'
+import { faPen, faUserPlus } from 'react-native-vector-icons/FontAwesome5'
 
 import { db } from '../../firebase'
 import * as theme from '../../core/theme';

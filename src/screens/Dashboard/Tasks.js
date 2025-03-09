@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import { connect } from 'react-redux'
-import { faCalendar } from '@fortawesome/pro-light-svg-icons'
+import { faCalendar } from 'react-native-vector-icons/FontAwesome5'
 
 import moment from 'moment';
 import 'moment/locale/fr'

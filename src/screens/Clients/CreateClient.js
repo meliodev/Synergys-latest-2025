@@ -45,7 +45,7 @@ import {
   displayError,
   setToast,
 } from '../../core/utils';
-import { faMagic } from '@fortawesome/pro-light-svg-icons';
+import { faMagic } from 'react-native-vector-icons/FontAwesome5';
 
 class CreateClient extends Component {
   constructor(props) {

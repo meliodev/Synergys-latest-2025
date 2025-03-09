@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Keyboard } from '
 import { List } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/Entypo'
 import { connect } from 'react-redux'
-import { faTimes } from '@fortawesome/pro-light-svg-icons';
+import { faTimes } from 'react-native-vector-icons/FontAwesome5';
 import DocumentPicker from '@react-native-documents/picker';
 
 import moment from 'moment';

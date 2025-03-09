@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity, Linking } from "react-native"
 import { Checkbox } from 'react-native-paper'
 import { withNavigation } from 'react-navigation'
 import { faEye, faMapMarkerAlt } from 'react-native-fontawesome'
-import { faWaze } from '@fortawesome/free-brands-svg-icons'
+import { faWaze } from 'react-native-vector-icons/FontAwesome5'
 
 import MyInput from './TextInput'
 import CustomIcon from './CustomIcon'

@@ -23,7 +23,7 @@ import { load } from "../../core/utils"
 
 import SearchInput, { createFilter } from 'react-native-search-filter'
 import { handleFirestoreError } from '../../core/exceptions'
-import { faUsers, faUser } from '@fortawesome/pro-light-svg-icons'
+import { faUsers, faUser } from 'react-native-vector-icons/FontAwesome5'
 
 const KEYS_TO_FILTERS = ['id', 'fullName', 'nom', 'prenom', 'denom']
 

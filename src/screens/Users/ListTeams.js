@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Alert, RefreshControl } from 'react-native'
 import { List } from 'react-native-paper'
-import { faUsers } from '@fortawesome/pro-light-svg-icons'
+import { faUsers } from 'react-native-vector-icons/FontAwesome5'
 import { withNavigation } from 'react-navigation'
 import SearchInput, { createFilter } from 'react-native-search-filter'
 

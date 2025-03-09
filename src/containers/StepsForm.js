@@ -1,4 +1,4 @@
-import { faTimes } from '@fortawesome/pro-light-svg-icons';
+import { faTimes } from 'react-native-vector-icons/FontAwesome5';
 import React, { Component } from 'react';
 import {
   KeyboardAvoidingView,

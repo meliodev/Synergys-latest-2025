@@ -1,11 +1,11 @@
 //Conditionnal rendering depending on USER ROLE
 
 import React, { memo } from "react";
-import { Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { Text, StyleSheet, TouchableOpacity, View } from 'react-native'
 import { FAB } from 'react-native-paper'
 import Animated from 'react-native-reanimated';
 import { connect } from 'react-redux'
-import { faConstruction, faTicket } from '@fortawesome/pro-light-svg-icons'
+import { faConstruction, faTicket } from 'react-native-vector-icons/FontAwesome5'
 
 import Appbar from '../../components/Appbar'
 import SearchBar from '../../components/SearchBar'
@@ -16,8 +16,7 @@ import ListTickets from './ListTickets';
 
 import * as theme from "../../core/theme";
 import { constants } from "../../core/constants";
-import { View } from "react-native-ui-lib";
-import TwoTabs from "../../components/TwoTabs";
+ import TwoTabs from "../../components/TwoTabs";
 
 const initialLayout = { width: constants.ScreenWidth }
 

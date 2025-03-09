@@ -6,7 +6,7 @@ import NetInfo from "@react-native-community/netinfo"
 import _ from 'lodash'
 import { faUser, faUserSlash } from 'react-native-vector-icons/FontAwesome5'
 import { faPlusCircle } from '@fortawesome/pro-duotone-svg-icons'
-import { faBullseyeArrow, faCheck, faConstruction, faInfo, faLock, faMoneyBill, faRedo, faTimes } from '@fortawesome/pro-light-svg-icons'
+import { faBullseyeArrow, faCheck, faConstruction, faInfo, faLock, faMoneyBill, faRedo, faTimes } from 'react-native-vector-icons/FontAwesome5'
 import { connect } from 'react-redux'
 
 import moment from 'moment';
