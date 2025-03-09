@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, FlatList, RefreshControl } from 'react-native';
 import { connect } from 'react-redux'
 import { faConstruction } from '@fortawesome/pro-light-svg-icons'
-import { faThLarge, faList } from '@fortawesome/pro-solid-svg-icons'
+import { faThLarge, faList } from 'react-native-vector-icons/FontAwesome5'
 import _ from 'lodash'
 
 

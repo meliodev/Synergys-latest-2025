@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Appbar as appbar } from 'react-native-paper';
 import { withNavigation } from 'react-navigation'
 import { FontAwesomeIcon } from 'react-native-vector-icons/FontAwesome5'
-import { faArrowLeft, faTimes, faBars, faRedo, faPaperclip, faEllipsisVv, faTrash, faPaperPlane, faPen, faSearch } from 'react-native-fontawesome'
-import { faCheck } from '@fortawesome/pro-solid-svg-icons'
+import { faArrowLeft, faTimes, faBars, faRedo, faPaperclip, faEllipsisVv, faTrash, faPaperPlane, faPen, faSearch } from 'react-native-vector-icons/FontAwesome5'
+import { faCheck } from 'react-native-vector-icons/FontAwesome5'
 
 import Loading from './Loading'
 

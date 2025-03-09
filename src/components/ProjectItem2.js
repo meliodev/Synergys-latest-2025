@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
-import { faTools, faToolbox, faLamp, faUserHardHat, faCalendar, faCalendarAlt, faFolderOpen } from '@fortawesome/pro-duotone-svg-icons'
-import { faCheckCircle, faTimesCircle } from '@fortawesome/pro-solid-svg-icons'
+import { faTools, faToolbox, faLamp, faUserHardHat, faCalendar, faCalendarAlt, faFolderOpen } from 'react-native-vector-icons/FontAwesome5'
+import { faCheckCircle, faTimesCircle } from 'react-native-vector-icons/FontAwesome5';
 
 import CustomIcon from './CustomIcon'
 

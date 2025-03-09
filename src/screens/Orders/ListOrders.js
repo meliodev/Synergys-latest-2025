@@ -22,7 +22,7 @@ import { constants } from '../../core/constants';
 import { load, toggleFilter, setFilter, handleFilter, countDown } from '../../core/utils'
 import { configureQuery } from '../../core/privileges'
 import { fetchDocs, fetchDocuments } from '../../api/firestore-api';
-import { firebase } from '@react-native-firebase/crashlytics';
+import { firebase } from '@react-native-firebase/app';
 
 const KEYS_TO_FILTERS = ['id', 'name', 'state'] //#edit
 

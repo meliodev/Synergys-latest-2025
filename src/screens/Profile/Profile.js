@@ -4,7 +4,7 @@ import { TextInput } from 'react-native-paper'
 import TextInputMask from 'react-native-text-input-mask'
 import NetInfo from "@react-native-community/netinfo"
 import _ from 'lodash'
-import { faUser, faUserSlash } from '@fortawesome/pro-solid-svg-icons'
+import { faUser, faUserSlash } from 'react-native-vector-icons/FontAwesome5'
 import { faPlusCircle } from '@fortawesome/pro-duotone-svg-icons'
 import { faBullseyeArrow, faCheck, faConstruction, faInfo, faLock, faMoneyBill, faRedo, faTimes } from '@fortawesome/pro-light-svg-icons'
 import { connect } from 'react-redux'

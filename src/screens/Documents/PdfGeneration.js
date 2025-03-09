@@ -10,7 +10,7 @@ import {
   degrees,
   grayscale,
 } from 'pdf-lib';
-import Pdf from 'react-native-pdf';
+//import Pdf from 'react-native-pdf';
 import RNFS from 'react-native-fs';
 import RNFetchBlob from 'rn-fetch-blob';
 

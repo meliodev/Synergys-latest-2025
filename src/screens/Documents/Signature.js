@@ -12,7 +12,7 @@ import {
 import { ProgressBar } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import firebase, { crashlytics, db, functions } from '../../firebase';
+//import firebase, { crashlytics, db, functions } from '../../firebase';
 import Dialog from 'react-native-dialog';
 import _ from 'lodash';
 import { connect } from 'react-redux';
@@ -627,8 +627,8 @@ class Signature extends Component {
       this.props.navigation.pop(this.onSignaturePop);
     } catch (e) {
 
-      crashlytics.log(document)
-      crashlytics.recordError(e, "Erreur d'importation de document signé")
+      // crashlytics.log(document)
+      // crashlytics.recordError(e, "Erreur d'importation de document signé")
 
       setToast(
         this,

@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import Menu from './Menu'
 import CustomIcon from './CustomIcon'
-import { faBell, faBellExclamation } from '@fortawesome/pro-solid-svg-icons'
+import { faBell, faBellExclamation } from 'react-native-vector-icons/FontAwesome5'
 
 import { db, auth } from '../firebase'
 import * as theme from '../core/theme'

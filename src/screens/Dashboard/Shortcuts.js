@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, FlatList, ScrollView } from 'react-native'
-import { faUserAlt, faAddressCard, faClipboardUser, faConstruction, faCalendarAlt, faFolder, faVials } from '@fortawesome/pro-solid-svg-icons'
+import { faUserAlt, faAddressCard, faClipboardUser, faConstruction, faCalendarAlt, faFolder, faVials } from 'react-native-vector-icons/FontAwesome5'
 import { connect } from 'react-redux'
 import _ from "lodash"
 
@@ -16,7 +16,7 @@ import { load } from '../../core/utils'
 import { ModalForm } from '../../components/ModalOptions'
 
 import { Appbar, CustomIcon, Section, EmptyList, NotificationItem, TaskItem, Loading } from '../../components'
-import crashlytics, { firebase } from '@react-native-firebase/crashlytics';
+//import crashlytics, { firebase } from '@react-native-firebase/crashlytics';
 
 const shortcutsModel = {
     createProspect: {

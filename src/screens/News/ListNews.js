@@ -10,7 +10,7 @@ import EmptyList from '../../components/EmptyList'
 import { constants, errorMessages } from '../../core/constants'
 import { displayError, load } from '../../core/utils'
 import { Alert } from 'react-native';
-import { firebase } from '@react-native-firebase/crashlytics';
+import { firebase } from '@react-native-firebase/app';
 
 class ListNews extends Component {
     constructor(props) {

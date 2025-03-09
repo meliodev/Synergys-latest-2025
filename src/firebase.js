@@ -18,7 +18,7 @@ export const db = dbTemp
 export const auth = firebase.auth()
 export const messaging = firebase.messaging()
 export const functions = firebase.functions()
-export const crashlytics = firebase.crashlytics()
+//export const crashlytics = firebase.crashlytics()
 export const remoteConfig = firebase.remoteConfig()
 
 // in DEV env use emulators

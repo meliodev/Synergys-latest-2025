@@ -5,7 +5,7 @@ import { Appbar } from '../../components'
 import _ from 'lodash'
 import { connect } from 'react-redux'
 
-import { crashlytics, db } from '../../firebase';
+//import { crashlytics, db } from '../../firebase';
 
 import * as theme from '../../core/theme'
 import { requestRESPermission, requestWESPermission } from '../../core/permissions'
