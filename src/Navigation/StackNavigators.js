@@ -55,7 +55,7 @@ import Progression from '../screens/src/screen/Progression';
 // Documents
 import ListDocuments from '../screens/Documents/ListDocuments';
 import UploadDocument from '../screens/Documents/UploadDocument';
-import Signature from '../screens/Documents/Signature';
+//import Signature from '../screens/Documents/Signature';
 import PdfGeneration from '../screens/Documents/PdfGeneration';
 
 // Orders
@@ -66,20 +66,20 @@ import CreateOrder from '../screens/Orders/CreateOrder';
 
 // Forms
 // Simulation
-import CreateSimulation from '../screens/Forms/Simulations/CreateSimulation';
+//import CreateSimulation from '../screens/Forms/Simulations/CreateSimulation';
 import ListSimulations from '../screens/Forms/Simulations/ListSimulations';
 import GuestContactSuccess from '../screens/Forms/Simulations/GuestContactSuccess';
 // PV réception
-import CreatePvReception from '../screens/Forms/PvReception/CreatePvReception';
+// import CreatePvReception from '../screens/Forms/PvReception/CreatePvReception';
 import ListPvReceptions from '../screens/Forms/PvReception/ListPvReceptions';
 // Mandat MPR
-import CreateMandatMPR from '../screens/Forms/MandatMaPrimeRenov/CreateMandatMPR';
+// import CreateMandatMPR from '../screens/Forms/MandatMaPrimeRenov/CreateMandatMPR';
 import ListMandatsMPR from '../screens/Forms/MandatMaPrimeRenov/ListMandatsMPR';
 // Mandat Synergys
-import CreateMandatSynergys from '../screens/Forms/MandatSynergys/CreateMandatSynergys';
+// import CreateMandatSynergys from '../screens/Forms/MandatSynergys/CreateMandatSynergys';
 import ListMandatsSynergys from '../screens/Forms/MandatSynergys/ListMandatsSynergys';
 // Visite technique
-import CreateFicheTech from '../screens/Forms/FicheTechnique/CreateFicheTech';
+//import CreateFicheTech from '../screens/Forms/FicheTechnique/CreateFicheTech';
 
 // News
 import ListNews from '../screens/News/ListNews';
@@ -88,9 +88,9 @@ import ViewNews from '../screens/News/ViewNews';
 // Others
 import Chat from '../screens/Requests/Chat';
 import Profile from '../screens/Profile/Profile';
-import EditEmail from '../screens/Profile/EditEmail';
-import EditRole from '../screens/Profile/EditRole';
-import Address from '../screens/Profile/Address';
+// import EditEmail from '../screens/Profile/EditEmail';
+// import EditRole from '../screens/Profile/EditRole';
+//import Address from '../screens/Profile/Address';
 import VideoPlayer from '../screens/Helpers/VideoPlayer';
 
 import { constants, isTablet } from '../core/constants';
@@ -118,9 +118,9 @@ const DashboardStack = () => (
 const ProfileStack = () => (
   <Stack.Navigator screenOptions={hideHeader}>
     <Stack.Screen name="Profile" component={Profile} />
-    <Stack.Screen name="EditEmail" component={EditEmail} />
-    <Stack.Screen name="EditRole" component={EditRole} />
-    <Stack.Screen name="Address" component={Address} />
+    {/* <Stack.Screen name="EditEmail" component={EditEmail} />
+    <Stack.Screen name="EditRole" component={EditRole} /> */}
+    {/* <Stack.Screen name="Address" component={Address} /> */}
   </Stack.Navigator>
 );
 
@@ -182,7 +182,7 @@ const DocumentsStack = () => (
   <Stack.Navigator screenOptions={hideHeader}>
     <Stack.Screen name="ListDocuments" component={ListDocuments} />
     <Stack.Screen name="UploadDocument" component={UploadDocument} />
-    <Stack.Screen name="Signature" component={Signature} />
+    {/* <Stack.Screen name="Signature" component={Signature} /> */}
     <Stack.Screen name="PdfGeneration" component={PdfGeneration} />
   </Stack.Navigator>
 );
@@ -199,7 +199,7 @@ const OrdersStack = () => (
 const SimulatorStack = () => (
   <Stack.Navigator screenOptions={hideHeader}>
     <Stack.Screen name="ListSimulations" component={ListSimulations} />
-    <Stack.Screen name="CreateSimulation" component={CreateSimulation} />
+    {/* <Stack.Screen name="CreateSimulation" component={CreateSimulation} /> */}
     <Stack.Screen name="GuestContactSuccess" component={GuestContactSuccess} />
   </Stack.Navigator>
 );
@@ -207,14 +207,14 @@ const SimulatorStack = () => (
 const MandatMPRStack = () => (
   <Stack.Navigator screenOptions={hideHeader}>
     <Stack.Screen name="ListMandatsMPR" component={ListMandatsMPR} />
-    <Stack.Screen name="CreateMandatMPR" component={CreateMandatMPR} />
+    {/* <Stack.Screen name="CreateMandatMPR" component={CreateMandatMPR} /> */}
   </Stack.Navigator>
 );
 
 const MandatSynergysStack = () => (
   <Stack.Navigator screenOptions={hideHeader}>
     <Stack.Screen name="ListMandatsSynergys" component={ListMandatsSynergys} />
-    <Stack.Screen name="CreateMandatSynergys" component={CreateMandatSynergys} />
+    {/* <Stack.Screen name="CreateMandatSynergys" component={CreateMandatSynergys} /> */}
   </Stack.Navigator>
 );
 
@@ -245,7 +245,7 @@ const AuthStack = () => (
 // GUEST APP
 const SimulatorStackGuest = () => (
   <Stack.Navigator screenOptions={hideHeader}>
-    <Stack.Screen name="CreateSimulation" component={CreateSimulation} />
+    {/* <Stack.Screen name="CreateSimulation" component={CreateSimulation} /> */}
     <Stack.Screen name="GuestContactSuccess" component={GuestContactSuccess} />
     <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} />
   </Stack.Navigator>

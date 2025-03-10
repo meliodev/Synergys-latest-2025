@@ -1,7 +1,7 @@
 // At the top where our imports are...
 import React, { Component } from 'react'
 import { View, StyleSheet, Text } from 'react-native'
-import Video from 'react-native-video-controls'
+// import Video from 'react-native-video-controls'
 
 import Toast from '../../components/Toast'
 import { constants } from '../../core/constants'
@@ -33,7 +33,7 @@ export default class VideoPlayer extends Component {
 
         return (
             <View style={styles.container}>
-                <Video
+                {/* <Video
                     source={{ uri: this.videoUrl }}
                     navigator={this.props.navigation}
                     pause={true}
@@ -41,8 +41,8 @@ export default class VideoPlayer extends Component {
                     disableBack={true}
                     disableDownload={false}
                     handleDownload={this.handleDownload.bind(this)}
-                />
-
+                /> */}
+<Text>Cette fonctionnalité va bientôt mettre à jour</Text>
                 <Toast
                     containerStyle={{ bottom: constants.ScreenWidth * 0.6 }}
                     message={toastMessage}

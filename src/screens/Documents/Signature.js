@@ -16,7 +16,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Dialog from 'react-native-dialog';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import DeviceInfo from 'react-native-device-info';
+//import DeviceInfo from 'react-native-device-info';
 import { NetworkInfo } from 'react-native-network-info';
 
 import moment from 'moment';
@@ -570,11 +570,11 @@ class Signature extends Component {
       //Data of proofs
       const ipLocalAddress = await NetworkInfo.getIPAddress() || "";
       const ipV4Address = await NetworkInfo.getIPV4Address() || "";
-      const macAddress = await DeviceInfo.getMacAddress() || "";
-      const android_id = await DeviceInfo.getAndroidId() || "";
-      const app_name = await DeviceInfo.getApplicationName() || "";
-      const device = await DeviceInfo.getDevice() || "";
-      const device_id = await DeviceInfo.getDeviceId() || "";
+      // const macAddress = await DeviceInfo.getMacAddress() || "";
+      // const android_id = await DeviceInfo.getAndroidId() || "";
+      // const app_name = await DeviceInfo.getApplicationName() || "";
+      // const device = await DeviceInfo.getDevice() || "";
+      // const device_id = await DeviceInfo.getDeviceId() || "";
 
       const { signedAttachment, phoneNumber, ref, motif } = this.state;
 
@@ -601,11 +601,11 @@ class Signature extends Component {
           phoneNumber, //only when signGenerated = true
           ipLocalAddress,
           ipV4Address,
-          macAddress,
+       //   macAddress,
           //android_id,
           //app_name,
-          device,
-          device_id,
+          // device,
+          // device_id,
           //Signature reference
           ref,
           //Other data

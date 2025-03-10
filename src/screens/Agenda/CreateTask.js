@@ -5,7 +5,7 @@ import firebase, { db, auth } from '../../firebase'
 import { faInfoCircle, faFileAlt, faCalendarPlus, faClock, faCalendar, faTimes, faRetweet } from 'react-native-vector-icons/FontAwesome5'
 import _ from 'lodash'
 import { connect } from 'react-redux'
-import { getSystemAvailableFeatures } from 'react-native-device-info'
+//import { getSystemAvailableFeatures } from 'react-native-device-info'
 
 import moment from 'moment';
 import 'moment/locale/fr'

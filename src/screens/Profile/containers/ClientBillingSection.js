@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, TouchableOpacity, View, Text, Keyboard } from 'react-native'
 import _ from 'lodash'
-import { faPlusCircle } from '@fortawesome/pro-duotone-svg-icons'
+import { faPlusCircle } from 'react-native-vector-icons/FontAwesome5'
 import { faCheck, faMoneyBill, faTimes } from 'react-native-vector-icons/FontAwesome5'
 import { connect } from 'react-redux'
 

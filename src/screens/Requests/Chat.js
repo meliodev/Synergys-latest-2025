@@ -6,8 +6,6 @@ import DocumentPicker from '@react-native-documents/picker';
 import RNFS from 'react-native-fs'
 import { IconButton } from 'react-native-paper'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import Video from 'react-native-video'
-import VideoPlayer from 'react-native-video-controls';
 import { Thumbnail } from 'react-native-thumbnail-video'
 import ImageView from 'react-native-image-view'
 import _ from 'lodash'
