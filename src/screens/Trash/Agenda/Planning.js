@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Image } from 'react-native';
-import DateTime from 'react-native-customize-selected-date'
 import _ from 'lodash'
 import Icon from 'react-native-vector-icons/FontAwesome'
 

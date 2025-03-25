@@ -35,7 +35,7 @@ import { fontsConfig } from './fontConfig';
 import * as theme from './src/core/theme';
 import MyStatusBar from './src/components/MyStatusBar';
 // import { LoadDialog } from './src/components';
-
+//Salim commit
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const paperTheme = {
