@@ -5,7 +5,7 @@ import {
   Alert,
   LogBox,
   Platform,
-  StyleSheet,
+  StyleSheet,  //first commit
   Text
 } from 'react-native';
 import notifee, { AndroidImportance } from '@notifee/react-native';
